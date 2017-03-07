@@ -1,0 +1,248 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  color: #384047;
+  max-width: 320px;
+  max-height: 2000px;
+  margin: 0 auto;
+  background: linear-gradient(white 80%, yellow);
+  }
+form {
+  width: 300px;
+  border-top: 2px solid #304444;
+  margin: 3px auto;
+  
+  padding-top: 10px;
+}
+/* --- HEADER STYLES ---*/
+.header {
+  background-color: #304444;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 0 20px 0;
+  font-size: 1.1em;
+}
+.header-info {
+  width: 300px;
+  border-bottom: 5px solid #304444;
+  margin: 0 auto;
+  font-size: .6em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.header-info p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* ---FORM STYLES--- */
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 5px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 20px;
+}
+input[type="number"] {
+  max-width: 50%;
+}
+textarea {
+  height: 100px;
+}
+input[placeholder] {
+  text-align: right;
+  font-style: italic;
+  font-size: .9em;
+}
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #394fba;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.25em;
+  border: none;
+}
+fieldset {
+  border: none;
+  padding-top: 0;
+}
+legend {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.15em;
+  margin: 20px 0;
+}
+
+
+/*focus on form inputs */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border: 2px solid #304444;
+  transition: all .2s ease-in;
+}
+
+/*blur after focus */
+
+
+/* unselected */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 10px 0;
+  width: 30px;
+  top: 10px;
+}
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.label-newsletter, {
+  margin: 15px auto;
+}
+
+label.light {
+  display: inline;
+}
+
+/* ---FOOTER STYLES ---*/
+footer {
+  text-align: center;
+  font-style: italic;
+  color: #304444;
+  margin-bottom: 100px;
+}
+/* ---CLEARFIX ---*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---STYLEING FOR MEDIUM SCREENS--- */
+
+@media (min-width: 769px) {
+  body {
+    max-width: 100%;
+    max-height: 2000px;
+    margin: 0 auto;
+  }
+  form {
+    width: 600px;
+  }
+  /* Header Style */
+  .header {
+    margin-bottom: 0;
+  }
+  .header-info {
+    width: 600px;
+    border-bottom: 5px solid #304444;
+    margin: 60px auto 0 auto;
+    font-size: .6em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .header-info p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+  }
+  .header-info h1 {
+    margin-bottom: 5px;
+  }
+}
+
+/* ---STYLING FOR LARGER SCREENS--- */
+
+@media (min-width: 1025px) {
+  body {
+    max-width: 100%;
+    max-height: 1800px;
+    margin: 0 auto;
+  }
+  form {
+    width: 600px;
+    border-top: 2px solid #304444;
+    margin: 3px auto;
+  }
+  /* Header style */
+  .header {
+    margin-bottom: 0;
+  }
+  .header-info {
+    width: 600px;
+    border-bottom: 5px solid #304444;
+    margin: 60px auto 0 auto;
+    font-size: .6em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .header-info p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+  }
+  .header-info h1 {
+    margin-bottom: 5px;
+  }
+  /* Form Styles */
+  .contact-header {
+    margin-bottom: 20px;
+  }
+  form {
+    padding: 30px 0 30px 0;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  select {
+    width: 75%;
+  }
+  input[type="number"] {
+    width: 150px;
+  }
+  .contact-form-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+  #zip {
+    margin-right: 300px;
+  }
+}

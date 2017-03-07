@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Treehouse Project Three</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="header">The Code Review</h1>
+			<div class="header-info">
+				<h1>Signup for our newsletter</h1>
+				<p>Get the latest news on how your code is doing right in your inbox</p>
+			</div>
+		</header>
+		<div id="container">
+		<fieldset>
+			<form action="index.html" method="post" class="form-contact clearfix">
+				<legend class="contact-header">Contact Information</legend>
+					<div class="contact-form-layout">
+						<label for="name">Full Name</label>
+						<input type="text" id="name" name="user_name" placeholder="Required">
+					</div>
+					<div class="contact-form-layout">
+						<label for="mail">Email Address</label>
+						<input type="email" id="mail" name="user_email" placeholder="Required">
+					</div>
+					<div class="contact-form-layout">
+						<label for="telephone">Phone Number</label>
+						<input type="tel" id="telephone" name="user_tel">
+					</div>
+					<div class="contact-form-layout">
+						<label for="address">Street Address</label>
+						<input type="text" id="address" name="user_address">
+					</div>
+					<div class="contact-form-layout">
+						<label for="city">City</label>
+						<input type="text" id="city" name="user_city">
+					</div>
+					<div class="contact-form-layout">
+						<label for="state">State</label>
+						<select id="state" name="user_state">
+							<option value="">Choose State</option>
+							<option value="alabama">Alabama</option>
+							<option value="alaska">Alaska</option>
+							<option value="arizonia">Arizonia</option>
+							<option value="arkansas">Arkansas</option>
+							<option value="california">California</option>
+							<option value="colorado">Colorado</option>
+							<option value="connecticut">Connecticut</option>
+							<option value="delaware">Delaware</option>
+							<option value="florida">Florida</option>
+							<option value="georgia">Georgia</option>
+							<option value="hawaii">Hawaii</option>
+							<option value="idaho">Idaho</option>
+							<option value="illinois">Illinois</option>
+							<option value="indiana">Indiana</option>
+							<option value="iowa">Iowa</option>
+							<option value="kansas">Kansas</option>
+							<option value="kentucky">Kentucky</option>
+							<option value="louisiana">Louisiana</option>
+							<option value="maine">Maine</option>
+							<option value="maryland">Maryland</option>
+							<option value="massachusetts">Massachusetts</option>
+							<option value="michigan">Michigan</option>
+							<option value="minnesota">Minnesota</option>
+							<option value="mississippi">Mississippi</option>
+							<option value="missouri">Missouri</option>
+							<option value="montana">Montana</option>
+							<option value="nebraska">Nebraska</option>
+							<option value="nevada">Nevada</option>
+							<option value="new-hampshire">New Hampshire</option>
+							<option value="new-jersey">New Jersey</option>
+							<option value="new-mexico">New Mexico</option>
+							<option value="new-york">New York</option>
+							<option value="north-carolina">North Carolina</option>
+							<option value="north-dakota">North Dakota</option>
+							<option value="ohio">Ohio</option>
+							<option value="oklahoma">Oklahoma</option>
+							<option value="oregon">Oregon</option>
+							<option value="pennsylvania">Pennsylvania</option>
+							<option value="rhode-island">Rhode Island</option>
+							<option value="south-carolina">South Carolina</option>
+							<option value="south-dakota">South Dakota</option>
+							<option value="tennessee">Tennessee</option>
+							<option value="texas">Texas</option>
+							<option value="utah">Utah</option>
+							<option value="vermont">Vermont</option>
+							<option value="virginia">Virginia</option>
+							<option value="washington">Washington</option>
+							<option value="west-virginia">West Virginia</option>
+							<option value="wisconsin">Wisconsin</option>
+							<option value="wyoming">Wyoming</option>
+						</select>
+					</div>
+					<div class="contact-form-layout">
+						<label for="zip">Zip Code</label>
+						<input type="number" id="zip" name="user_zip" min="00000" max="99999" placeholder="12345">
+					</div>
+			</form>
+		</fieldset>
+		<fieldset>
+			<form action="index.html" method="post" class="form-code clearfix">
+				<legend class="developer-styles">Developer Information</legend>
+				<label class="developer">Select the developer roles you would find most interesting</label>
+					<input type="checkbox" id="front-end" value="front-end-type" name="dev-type"><label for="front-end" class="light">Front End Developer</label><br>
+					<input type="checkbox" id="back-end" value="back-end-type" name="dev-type"><label for="back-end" class="light">Back End Developer</label><br>
+					<input type="checkbox"  id="fullstack" value="fullstack-type" name="dev-type"><label for="fullstack" class="light">Full Stack Developer</label>
+					<label for="personal-website" class="personal-website-label">If you would like to link to a website, enter you url here:</label>
+					<input type="url" id="personal-website" name="homepage" placeholder="Example: www.yoursite.com">
+			</form>
+		</fieldset>
+		<fieldset>
+			<form action="index.html" method="post" class="form-newsletter clearfix">
+				<legend class="newsletter-header">Newsletter</legend>
+				<label class="label-newsletter">Select the newsletters you would like to recieve</label>
+					<input type="checkbox" id="html-news" value="html-type" name="news-recieve"><label for="html-news" class="light">HTML News</label><br>
+					<input type="checkbox" id="css-news" value="css-type" name="news-recieve"><label for="css-news" class="light">CSS News</label><br>
+					<input type="checkbox"  id="javascript-news" value="javascript-type" name="news-recieve"><label for="javascript-news" class="light">Javascript News</label>
+
+				<label class="label-newsletter">Newletter format</label>
+					<input type="radio" id="newsletter-html" value="html" name="newsletter"><label for="newsletter-html" class="light">HTML</label><br>
+					<input type="radio" id="newsletter-text" value="text" name="newsletter"><label for="newsletter-text" class="light">Plain text</label>
+				<label for="other_topics" class="label-newsletter">Other topics you'd like to hear about</label>
+					<textarea id="other_topics" name="user_interests"></textarea>
+				<button type="submit">Sign Up</button>
+			</form>
+		</fieldset>
+		</div>
+		<footer>
+			<p>Copyright The Code Review</p>
+		</footer>
+	</body>
+</html>
